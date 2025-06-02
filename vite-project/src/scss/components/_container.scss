@@ -2,7 +2,16 @@
 @use "../partials/variables" as v;
 @use "../partials/functions" as f;
 
-.container {
-    display: flex;
-    text-align: center;
+@layer components {
+	.container {
+		padding: 0 2rem;
+		@each $name, $value in v.$breakpoints {
+			@media (width > $value) {
+				@if ($name == "sm") {
+					margin: auto;
+				}
+				max-width: calc($value - 4rem);
+			}
+		}
+	}
 }

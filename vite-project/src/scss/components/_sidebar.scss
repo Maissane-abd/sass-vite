@@ -5,6 +5,7 @@
 .sidebar {
     display: none;
     z-index: 1;
+    text-align: start;
 
     @media screen and (min-width: f.screen("desktop-up")) {
         display: block;
@@ -22,7 +23,7 @@
         }
     
         &__search {
-            width: 80%;       
+            width: 100%;       
             border: none;
 
             html.light & {

@@ -8,10 +8,38 @@
     <script type="module" src="./src/js/main.js"></script>
 </head>
 <body>
+  <section>
+    <h2>.header (nav)</h2>
+    <header class="header typo-bg">
+        <div class="header__container">
+            <div class="header__left">
+                <a class="header__logo" href="./index.html">
+                    <img src="./images/Crunchyroll_Logo.svg.webp" alt="Logo Crunchyroll" class="pl-5 pt-5 pr-5 pb-5">
+                </a>      
+                <nav class="header__nav" role="navigation" aria-label="Menu principal">
+                    <ul class="header__nav-list">
+                        <li ><a href="./index.html" class="typo-primary typo-m pt-10 pb-9 pl-4 pr-4">Accueil</a></li>                 
+                        <li ><a href="./design-guide.html" class=" typo typo-primary typo-m pt-10 pb-9 pl-4 pr-4 " >D-G</a></li>
+                        <li ><a href="./admin.html" class=" typo typo-primary typo-m pt-10 pb-9 pl-4 pr-4 " >Admin</a></li>
+                        <li ><a href="#" class=" typo typo-primary typo-m pt-10 pb-9 pl-4 pr-4"  id="darkToggle">Darkmode</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <ul class="header__auth-list">
+                    <li><a href="./signup.html" class="typo typo-primary typo-m pt-10 pb-9 pl-2 pr-2">S'inscrire</a></li>
+                    <li><a href="./login.html" class="typo typo-primary typo-m mr-4 pt-10 pb-9 pl-2 pr-2">Se connecter</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</section>
+<hr/>
+  <div class="container">
     <h1 >Design Guide</h1>
     <section>
         <h2>.button</h2>
-        <p><a href="#" class="button button-primary button-xl" id="darkToggle">Darkbutton</a>
+        <p><a href="#" class="button button-primary button-xl">button</a>
             <a href="#" class="button button-primary button-l">button</a>
             <a href="#" class="button button-primary button-m">button</a></p>
         <p><a href="#" class="button button-secondary button-m">button</a>
@@ -27,33 +55,6 @@
         <p class=".typo typo-l typo-fourth">Lorem ipsum dolor sit amet.</p>
         <p class=".typo typo-xl typo-green">Lorem ipsum dolor sit amet.</p>
         <p class=".typo typo-xxl">Lorem ipsum dolor sit amet.</p>
-    </section>
-    <hr/>
-    <section>
-        <h2>.header (nav)</h2>
-        <header class="header typo-bg">
-            <div class="header__container">
-                <div class="header__left">
-                    <a class="header__logo" href="./index.html">
-                        <img src="./images/Crunchyroll_Logo.svg.webp" alt="Logo Crunchyroll" class="pl-5 pt-5 pr-5 pb-5">
-                    </a>      
-                    <nav class="header__nav" role="navigation" aria-label="Menu principal">
-                        <ul class="header__nav-list">
-                            <li ><a href="./index.html" class="typo-primary typo-m pt-10 pb-9 pl-4 pr-4">Accueil</a></li>                 
-                            <li ><a href="./design-guide.html" class=" typo typo-primary typo-m pt-10 pb-9 pl-4 pr-4 " >D-G</a></li>
-                            <li ><a href="./admin.html" class=" typo typo-primary typo-m pt-10 pb-9 pl-4 pr-4 " >Admin</a></li>
-                            <li ><a href="#" class=" typo typo-primary typo-m pt-10 pb-9 pl-4 pr-4">Darkmode</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__right">
-                    <ul class="header__auth-list">
-                        <li><a href="./signup.html" class="typo typo-primary typo-m pt-10 pb-9 pl-2 pr-2">S'inscrire</a></li>
-                        <li><a href="./login.html" class="typo typo-primary typo-m mr-4 pt-10 pb-9 pl-2 pr-2">Se connecter</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
     </section>
     <hr/>
     <section>
@@ -284,6 +285,6 @@
       </div>
     </div>
   </section>
-    <script src="./script.js"></script>
+  </div>
 </body>
 </html>

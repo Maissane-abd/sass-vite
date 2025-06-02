@@ -2,6 +2,12 @@
 @use "../partials/variables" as v;
 @use "../partials/functions" as f;
 
+
+.admin-menu{
+  display: flex;
+  text-align: center;
+}
+
 .admin-main {
     width: 100%;
  }
@@ -13,3 +19,4 @@
       grid-template-columns: repeat(auto-fit, minmax(f.rem(220), 1fr));
     }
 }
+
