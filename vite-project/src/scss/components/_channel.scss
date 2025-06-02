@@ -1,0 +1,50 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+.channels {
+    
+  &__container {  
+    @media screen and (min-width: f.screen("desktop-up")) {
+      @include m.flexbox($direction: row, $wrap: column, $justify: flex-start, $align:center, $gap: f.rem(40));
+    }
+  }
+
+  &__text {
+    @include m.flexbox($direction: column, $wrap: wrap, $justify: space-around, $align:center, $gap: f.rem(20));
+    text-align: center;
+    width: 100%;
+  
+    @media screen and (min-width: f.screen("desktop-up")) {
+      width: 40%;
+    }
+  }
+    
+  &__grid {
+    flex: 1 1 60%;
+  }
+    
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: f.rem(20);
+    
+    li {
+  
+      a {
+        display: block;
+
+        img {
+          width: 100%;
+          border-radius: f.rem(8);
+          @include m.transition(transform 0.3s ease);
+    
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}
+    

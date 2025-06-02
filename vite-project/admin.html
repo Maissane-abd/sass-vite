@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Admin</title>
+  <link rel="stylesheet" href="./dist/main.css" />
+</head>
+<body>
+      <header class="header typo-nav-admin">
+        <div class="header__container">
+            <div class="header__left">
+                <a class="header__logo" href="./index.html">
+                    <img src="./assets/Crunchyroll_Logo.svg.png" alt="Logo Crunchyroll" class="p-4">
+                </a>
+            </div>
+            <div class="header__right">
+                <ul class="header__auth-list">
+                  <li ><a href="#" class="typo-primary mr-5">📧 Mail</a></li>
+                  <li ><a href="#" class="typo-primary mr-5">💬 Message</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+      
+
+      <div class="container">
+        <aside class="sidebar typo-side-admin p-5">
+          <nav class="sidebar__nav">
+            <p class="sidebar__user">👤 admin online</p>
+            <input type="text" class="sidebar__search mb-5" placeholder="Rechercher..." />
+      
+            <ul class="sidebar__menu">
+              <li class="sidebar__item"><a href="#" class="sidebar__link">Dashboard</a></li>
+              <li class="sidebar__item"><a href="#" class="sidebar__link">Utilisateurs</a></li>
+              <li class="sidebar__item"><a href="#" class="sidebar__link">Commandes</a></li>
+              <li class="sidebar__item"><a href="#" class="sidebar__link">Paramètres</a></li>
+              <li class="sidebar__item"><a href="#" class="sidebar__link">Documents</a></li>
+              <li class="sidebar__item"><a href="#" class="sidebar__link">Mises à jour</a></li>
+              <li class="sidebar__item"><a href="#" class="sidebar__link">Rapports</a></li>
+              <li class="sidebar__item"><a href="#" class="sidebar__link">Contrats</a></li>
+              <li class="sidebar__item"><a href="#" class="sidebar__link">Contacts</a></li>
+              <li class="sidebar__item"><a href="#" class="sidebar__link" id="darkToggle">Dark</a></li>
+            </ul>
+          </nav>
+        </aside>
+      
+        <main class="admin-main typo-bg-admin p-12">
+          <section class="admin-dashboard">
+            <h1 class="admin-dashboard__title typo-xl">Dashboard</h1>
+            <div class="admin-dashboard__cards">
+              <div class="card">
+                <h2 class="card__title">Utilisateurs</h2>
+                <p class="card__info">153 nouveaux ce mois </p>
+              </div>
+              <div class="card">
+                <h2 class="card__title">Commandes</h2>
+                <p class="card__info">312 traitées</p>
+              </div>
+              <div class="card">
+                <h2 class="card__title">Revenus</h2>
+                <p class="card__info">12 800 €</p>
+              </div>
+              <div class="card">
+                <h2 class="card__title">Notes</h2>
+                <p class="card__info">5443 notes</p>
+              </div>
+              
+              
+            </div>
+          </section>
+
+          <section class="mt-12">
+            <h2 class="typo-l mb-4">Derniers utilisateurs inscrits</h2>
+            <div class="datatable">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="p-3 typo-bg-admin">Nom</th>
+                    <th class="p-3 typo-bg-admin">Email</th>
+                    <th class="p-3 typo-bg-admin">Date d'inscription</th>
+                    <th class="p-3 typo-bg-admin">Statut</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3 typo-bg-admin">Jean Dupont</td>
+                    <td class="p-3 typo-bg-admin">jean.dupont@mail.com</td>
+                    <td class="p-3 typo-bg-admin">22/05/2025</td>
+                    <td class="p-3 typo-bg-admin">✅ Actif</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 typo-bg-admin">Sophie Martin</td>
+                    <td class="p-3 typo-bg-admin">sophie.m@mail.com</td>
+                    <td class="p-3 typo-bg-admin">21/05/2025</td>
+                    <td class="p-3 typo-bg-admin">🕓 En attente</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 typo-bg-admin">Ali Ben</td>
+                    <td class="p-3 typo-bg-admin">ali.ben@mail.com</td>
+                    <td class="p-3 typo-bg-admin">20/05/2025</td>
+                    <td class="p-3 typo-bg-admin">❌ Désactivé</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+      
+          <section class="note mt-9">
+            <h2 class="note__title typo-xl">Brouillon rapide</h2>
+            <form class="note__form">
+              <input type="text" class="note__input" placeholder="Titre" />
+              <textarea class="note__textarea" rows="6" placeholder="Qu'avez-vous en tête ?"></textarea>
+              <button type="submit" class="button button-secondary button-l">Enregistrer le brouillon</button>
+            </form>
+          </section>
+        </main>
+      </div>
+      <script src="./script.js"></script>  
+</body>
+</html>

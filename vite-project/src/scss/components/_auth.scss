@@ -1,0 +1,31 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+.auth {
+    &__container {
+     @include m.resetAuth;
+     text-align: center;
+ }
+ 
+   &__title {
+     text-align: center;
+   }
+ 
+   &__form {
+    @include m.flexbox($direction: column);
+   }
+
+   &__check {
+    display: flex;
+    align-items: center;
+   }
+
+   label, select {
+    text-align: start;
+
+    html.light &{
+      color: var(--text-dark);
+    }
+   }
+ }

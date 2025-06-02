@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Guide</title>
+    <link rel="stylesheet" href="./dist/main.css">
+</head>
+<body>
+    <h1 >Design Guide</h1>
+    <section>
+        <h2>.button</h2>
+        <p><a href="#" class="button button-primary button-xl" id="darkToggle">Darkbutton</a>
+            <a href="#" class="button button-primary button-l">button</a>
+            <a href="#" class="button button-primary button-m">button</a></p>
+        <p><a href="#" class="button button-secondary button-m">button</a>
+            <a href="#" class="button button-secondary button-s">button</a>
+            <a href="#" class="button button-secondary button-xs">button</a></p>
+    </section>
+    <hr/>
+    <section>
+        <h2>.typo</h2>
+        <p class=".typo typo-xs typo-primary">Lorem ipsum dolor sit amet.</p>
+        <p class=".typo typo-s typo-secondary">Lorem ipsum dolor sit amet.</p>
+        <p class=".typo typo-m typo-third">Lorem ipsum dolor sit amet.</p>
+        <p class=".typo typo-l typo-fourth">Lorem ipsum dolor sit amet.</p>
+        <p class=".typo typo-xl typo-green">Lorem ipsum dolor sit amet.</p>
+        <p class=".typo typo-xxl">Lorem ipsum dolor sit amet.</p>
+    </section>
+    <hr/>
+    <section>
+        <h2>.header (nav)</h2>
+        <header class="header typo-bg">
+            <div class="header__container">
+                <div class="header__left">
+                    <a class="header__logo" href="./index.html">
+                        <img src="./assets/Crunchyroll_Logo.svg.png" alt="Logo Crunchyroll" class="pl-5 pt-5 pr-5 pb-5">
+                    </a>      
+                    <nav class="header__nav" role="navigation" aria-label="Menu principal">
+                        <ul class="header__nav-list">
+                            <li ><a href="./index.html" class="typo-primary typo-m pt-10 pb-9 pl-4 pr-4">Accueil</a></li>                 
+                            <li ><a href="./design-guide.html" class=" typo typo-primary typo-m pt-10 pb-9 pl-4 pr-4 " >D-G</a></li>
+                            <li ><a href="./admin.html" class=" typo typo-primary typo-m pt-10 pb-9 pl-4 pr-4 " >Admin</a></li>
+                            <li ><a href="#" class=" typo typo-primary typo-m pt-10 pb-9 pl-4 pr-4">Darkmode</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <ul class="header__auth-list">
+                        <li><a href="./signup.html" class="typo typo-primary typo-m pt-10 pb-9 pl-2 pr-2">S'inscrire</a></li>
+                        <li><a href="./login.html" class="typo typo-primary typo-m mr-4 pt-10 pb-9 pl-2 pr-2">Se connecter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </section>
+    <hr/>
+    <section>
+        <h2>.footer</h2>
+        <footer class="footer ">
+            <div class="footer__container">
+              <div class="footer__columns">
+                <!-- Navigation principale -->
+                <div class="footer__column">
+                  <h3 class="footer__heading typo typo-l typo-secondary">Navigation</h3>
+                  <ul class="footer__list">
+                    <li><a href="#">Populaire</a></li>
+                    <li><a href="#">Simulcast</a></li>
+                    <li><a href="#">Agenda</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Boutique</a></li>
+                    <li><a href="#">Jeux</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Réseaux sociaux -->
+                <div class="footer__column">
+                  <h3 class="footer__heading typo typo-l typo-secondary">Suivez-nous</h3>
+                  <ul class="footer__list">
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                  </ul>
+                </div>
+
+                <!-- Informations générales -->
+            <div class="footer__column">
+              <h3 class="footer__heading typo typo-l typo-secondary">Crunchyroll</h3>
+              <ul class="footer__list">
+                <li><a href="#">Commencer l'essai gratuit</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Aide FAQ</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+              </ul>
+            </div>
+      
+            <!-- Mentions légales -->
+            <div class="footer__column">
+              <h3 class="footer__heading typo typo-l typo-secondary">Infos légales</h3>
+              <ul class="footer__list">
+                <li><a href="#">Gestion des cookies</a></li>
+                <li><a href="#">Relations presse</a></li>
+                <li><a href="#">Demandes de publicité</a></li>
+                <li><a href="#">Télécharger les Apps</a></li>
+                <li><a href="#">Utiliser une carte cadeau</a></li>
+                <li><a href="#">Offres d'emploi</a></li>
+                <li><a href="#">Index 2025 : 72/100</a></li>
+              </ul>
+            </div>
+
+            <!-- Compte utilisateur -->
+            <div class="footer__column">
+              <h3 class="footer__heading typo typo-l typo-secondary">Compte</h3>
+              <ul class="footer__list">
+                <li><a href="./signup.html">Créer un compte</a></li>
+                <li><a href="./login.html">Se connecter</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="footer__bottom  mt-12 pt-12">
+            <p>© Crunchyroll, LLC</p>
+          </div>
+        </div>
+      </footer>
+
+    </section>
+    <hr/>
+    <section>
+        <h2>.hero__banner</h2>
+        <p class="hero__banner"></p>
+    </section>
+    <hr/>
+    <section>
+        <h2>.channels</h2>
+        <section class="channels p-6">
+            <div class="channels__container">
+              <div class="channels__text mb-10">
+                <h2 class="typo typo-l">Vos chaînes préférées réunies au même endroit</h2>
+                <p>
+                  Avec Prime Video Channels, les membres Amazon Prime peuvent retrouver les films et séries de leurs chaînes préférées, réunis au même endroit. Résiliation possible à tout moment.
+                </p>
+                <a href="#" class="button button-primary button-xl">Regarder maintenant</a>
+              </div>
+          
+              <div class="channels__grid">
+                <ul class="channels__list">
+                  <li><a href="#"><img src="./assets/mlpmagnet_chADN._AC_SX400_QL80_FP_.jpg" alt="ADN"></a></li>
+                  <li><a href="#"><img src="./assets/mlpmagnet_chFilmo._AC_SX400_QL80_FP_.jpg" alt="Filmo"></a></li>
+                  <li><a href="#"><img src="./assets/mlpmagnet_chMax._AC_SX400_QL80_FP_.jpg" alt="Max"></a></li>
+                  <li><a href="#"><img src="./assets/mlpmagnet_chMGM._AC_SX400_QL80_FP_.jpg" alt="MGM"></a></li>
+                  <li><a href="#"><img src="./assets/mlpmagnet_chMubi._AC_SX400_QL80_FP_.jpg" alt="Mubi"></a></li>
+                  <li><a href="#"><img src="./assets/mlpmagnet_chOCS._AC_SX400_QL80_FP_.jpg" alt="OCS"></a></li>
+                  <li><a href="#"><img src="./assets/mlpmagnet_chParamountPlus._AC_SX400_QL80_FP_.jpg" alt="Paramount Plus"></a></li>
+                  <li><a href="#"><img src="./assets/mlpmagnet_chTFOU._AC_SX400_QL80_FP_.jpg" alt="TFOU"></a></li>
+                  <li><a href="#"><img src="./assets/mlpmagnet_chUniversalPlus._AC_SX400_QL80_FP_.jpg" alt="Universal Plus"></a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+    </section>
+    <hr/>
+    <section>
+        <h2>.auth</h2>
+        <div class="auth">
+          <div class="auth__container p-5">
+            <h2 class="auth__title typo typo-primary typo-l">Créer un compte</h2>
+            <form class="auth__form">
+              <label class="pt-3 pb-1" for="email">Adresse e-mail</label>
+              <input type="email" id="email" name="email" required class="mb-2">
+      
+      
+              <label class="pt-3 pb-1" for="gender">Genre</label>
+                <select id="gender" name="gender" class="auth__select mb-2 p-3">
+                  <option value="">-- Choisissez votre genre --</option>
+                  <option value="homme">Homme</option>
+                  <option value="femme">Femme</option>
+                  <option value="autre">Autre</option>
+                </select>
+      
+      
+              <label class="pt-3 pb-1" for="password">Mot de passe</label>
+              <input type="password" id="password" name="password" minlength="6" required class="mb-2">
+      
+              <div class="auth__check mt-4 mb-4">
+                <input type="checkbox" id="offers" name="offers" class="p-2">
+                <label class="typo-xs ml-2" for="offers">Envoyez-moi offres et actus</label>
+              </div>
+              
+      
+              <button type="submit" class="button button-primary button-l">Créer un compte</button>
+            </form>
+      
+            <p class="auth__text typo-xs">
+              Vous avez déjà un compte ?
+              <a href="./login.html" class="button button-secondary button-xs p-2 ml-2">SE CONNECTER</a>
+            </p>
+      
+            <small class="typo-xs">
+              En créant un compte, vous acceptez nos
+              <a href="#" class="typo-third">Conditions</a> et notre
+              <a href="#" class="typo-third">Politique de confidentialité</a>, et vous confirmez être âgé d'au moins 16 ans.
+            </small>
+          </div>
+          </div>
+    </section>
+    <hr/>
+    <section>
+        <h2>.sidebar</h2>
+        <aside class="sidebar p-5">
+            <nav class="sidebar__nav">
+              <p class="sidebar__user">👤 admin online</p>
+              <input type="text" class="sidebar__search mb-5" placeholder="Rechercher..." />
+        
+              <ul class="sidebar__menu">
+                <li class="sidebar__item"><a href="#" class="sidebar__link">Dashboard</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link">Utilisateurs</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link">Commandes</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link">Paramètres</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link">Documents</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link">Mises à jour</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link">Rapports</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link">Contrats</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link">Contacts</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link" id="darkToggle">Dark</a></li>
+              </ul>
+            </nav>
+          </aside>
+    </section>
+    <hr/>
+    <section>
+        <h2>.list__card + modal au clique</h2>
+        <div class="list__card p-0">
+          <a href=""><img src="./assets/anime2.jpg" alt="One Piece" class="list__image"></a>
+          <h3 class="list__name typo-m m-1">One Piece</h3>
+          <p class="list__version typo-xs m-1 typo-fourth">VOSTFR / VF</p>
+          <a href="#" class="button button-s button-secondary">Regarder</a>
+        </div>
+
+        <div class="modal" id="anime-modal">
+          <div class="modal__content p-7">
+            <span class="modal__close typo-primary">&times;</span>
+            <h3 id="modal-title" class="modal__title typo-l m-2 typo-primary"></h3>
+            <p id="modal-summary" class="modal__summary mb-2 typo-primary"></p>
+            <p id="modal-rating" class="modal__rating typo-secondary"></p>
+          </div>
+
+        </div>  
+    </section>
+    <hr/>
+    <section class="note mt-9">
+      <h2 class="note__title typo-xl">.note</h2>
+      <form class="note__form">
+        <input type="text" class="note__input" placeholder="Titre" />
+        <textarea class="note__textarea" rows="6" placeholder="Qu'avez-vous en tête ?"></textarea>
+        <button type="submit" class="button button-secondary button-l">Enregistrer le brouillon</button>
+      </form>
+    </section>
+    <hr/>
+    <section>
+      <h2>.card</h2>
+    <div class="card">
+      <h2 class="card__title">Utilisateurs</h2>
+      <p class="card__info">153 nouveaux ce mois </p>
+    </div>
+  </section>
+  <hr/>
+  <section class="faq pl-12 pr-12">
+    <h2 class="faq__title typo-xl mt-12">.faq accordéon</h2>
+    <div class="faq__item">
+      <button class="faq__question typo-primary p-4">Comment fonctionne l’abonnement ? <span class="faq__icon">🔽</span></button>
+      <div class="faq__answer">
+        <p>L’abonnement vous donne accès à tout le catalogue en illimité et sans pub.</p>
+      </div>
+    </div>
+    <div class="faq__item">
+      <button class="faq__question typo-primary p-4">Puis-je annuler à tout moment ? <span class="faq__icon">🔽</span></button>
+      <div class="faq__answer">
+        <p>Oui, vous pouvez annuler depuis votre compte à tout moment sans frais.</p>
+      </div>
+    </div>
+  </section>
+    <script src="./script.js"></script>
+</body>
+</html>

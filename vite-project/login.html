@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créer un compte | Crunchyroll</title>
+  <link rel="stylesheet" href="./dist/main.css">
+</head>
+<body>
+  <header class="header typo-bg">
+    <div class="header__container-signup" >  
+            <a class="header__logo" href="./index.html">
+                <img src="./assets/Crunchyroll_Logo.svg.png" class="p-3" alt="Logo Crunchyroll">
+            </a>
+    </div>
+</header>
+
+  <main class="auth">
+    <section class="auth__container p-5">
+      <p class="auth__title typo typo-primary typo-l">Se connecter</p>
+      <form class="auth__form">
+        <label class="pt-3 pb-1" for="email">Adresse e-mail</label>
+        <input type="email" id="email" name="email" required class="mb-2">
+
+        <label class="pt-3 pb-1" for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" minlength="6" required class="mb-2">
+
+        <button type="submit" class="button button-primary button-l mt-6">Se connecter</button>
+      </form>
+
+      <p class="auth__text typo-xs">
+        Vous n'avez pas de compte ?
+        <a href="./signup.html" class="button button-secondary button-xs p-2 ml-2">Créer un compte</a>
+      </p>
+    </section>
+
+   <footer class="footer mb-0">
+        <div class="footer__container">
+          <button id="darkToggle">Dark</button>
+          
+      
+          <div class="footer__bottom  mt-12 pt-12">
+            <p>© Crunchyroll, LLC</p>
+          </div>
+        </div>
+      </footer>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

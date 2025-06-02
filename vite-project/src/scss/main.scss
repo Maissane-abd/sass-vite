@@ -1,0 +1,24 @@
+@use "partials/layers";
+
+@use "vendor/modern-normalize.css";
+
+@use "partials/globals";
+@use "partials/utilities";
+
+@use "./components/button";
+@use "./components/typography";
+
+@use "./components/header";
+@use "./components/hero";
+@use "./components/channel";
+@use "./components/footer";
+@use "./components/auth";
+@use "./components/container";
+@use "./components/sidebar";
+@use "./components/card";
+@use "./components/datatable";
+@use "./components/note";
+@use "./components/admin";
+@use "./components/list";
+@use "./components/faq";
+@use "./components/modal";

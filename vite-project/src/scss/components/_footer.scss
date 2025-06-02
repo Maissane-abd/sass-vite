@@ -1,0 +1,53 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+.footer {
+  
+  &__container {
+    @include m.flexbox($direction: column, $wrap: wrap, $justify: flex-start, $align: center, $gap: f.rem(0));
+    text-align: center;
+    
+    @media screen and (min-width: f.screen("phone-down"))  {
+      max-width: f.rem(1200);
+      margin: 0 auto;
+      display: block;
+    }    
+  }
+    
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(f.rem(180), 1fr));
+    gap: f.rem(30);
+  }
+    
+  &__list {
+    
+    li {
+      margin-bottom: f.rem(8);
+    
+      a {
+        color: var(--grey-light);
+        @include m.transition(color 0.3s ease);
+        &:hover {
+          color: var(--primary);
+        }
+
+        html.light & {
+          color: var(--grey);
+
+          &:hover {
+            color: var(--primary);
+          }
+		    } 
+      }
+    }
+  }
+    
+  &__bottom {
+    text-align: center;
+    border-top: 1px solid var(--grey-light);
+    color: var(--grey);
+  }
+}
+    

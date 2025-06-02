@@ -1,0 +1,73 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+@layer components {
+
+.button {
+	@include m.resetButton;
+
+  // Couleurs
+  &-primary {
+    background-color: var(--primary);
+    color: var(--text-dark);
+
+    &:hover {
+      background-color: var(--primary-hover);
+	    color: var(--text-dark);
+    }
+
+    html.light & {
+      color: var(--text-light);
+    } 
+  }
+
+  &-secondary {
+    background-color: var(--bg-dark); 
+    color: var(--text-light);
+	  border: 1px solid var(--primary);
+
+    &:hover {
+      background-color: var(--bg-light); 
+      color: var(--text-dark);
+    }
+
+    html.light & {
+      background-color: transparent;
+      color: var(--text-dark);
+      border: 1px solid var(--black);
+
+      &:hover {
+        background-color: var(--bg-dark); 
+        color: var(--text-light);
+      }
+    } 
+  }
+
+  // Tailles
+  &-xs {
+    padding: f.rem(4) f.rem(8);
+    font-size: f.rem(12);
+  }
+
+  &-s {
+    padding: f.rem(6) f.rem(12);
+    font-size: f.rem(14);
+  }
+
+  &-m {
+    padding: f.rem(10) f.rem(16);
+    font-size: f.rem(16);
+  }
+
+  &-l {
+    padding: f.rem(14) f.rem(20);
+    font-size: f.rem(18);
+  }
+
+  &-xl {
+    padding: f.rem(18) f.rem(24);
+    font-size: f.rem(20);
+  }
+}
+}

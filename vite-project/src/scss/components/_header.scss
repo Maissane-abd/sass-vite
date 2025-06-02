@@ -1,0 +1,53 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+.header {
+    @include m.headerReset;
+
+    &__container {
+      @media screen and (min-width: f.screen("desktop-up")) { 
+      @include m.flexbox($direction: row, $wrap: nowrap, $justify: space-between, $align: center,  $gap: f.rem(0));
+      }
+    }
+   
+    &__left,
+    &__right {  
+      @media screen and (min-width: f.screen("desktop-up"))  {
+         @include m.flexbox($align: center);
+      }
+    }
+    
+    &__logo {
+      @include m.flexbox($justify: center);
+      
+      img {
+        height: 6rem;
+      }
+    }
+    
+    &__nav-list,
+    &__auth-list {
+      display: none;
+
+      @media screen and (min-width: f.screen("desktop-up"))  {
+        display: flex;
+      }
+
+      a {
+
+        &:hover {
+          background-color: var(--bg-dark);
+          color:var(--primary-hover) ;
+        }
+
+        html.light & {
+          &:hover {
+            background-color: transparent;
+            color:var(--primary-hover) ;
+          }
+		    } 
+      }
+    }
+  }
+    

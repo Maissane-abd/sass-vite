@@ -1,0 +1,15 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+.admin-main {
+    width: 100%;
+ }
+  
+.admin-dashboard {
+    &__cards {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(f.rem(220), 1fr));
+    }
+}
