@@ -7,7 +7,7 @@
     
     &__banner {
       @include m.background-coverMobile;
-      background-image: url("/images/WindBreaker-S2C1-KV1-(Character)-Banner-2100x700-FR.png");
+      background-image: url("/images/WindBreaker-S2C1-KV1-(Character)-Banner-2100x700-FR.webp");
     
       @media screen and (min-width: f.screen("desktop-up")) {
         @include m.background-cover;
